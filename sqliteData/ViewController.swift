@@ -25,6 +25,16 @@ class ViewController: UIViewController {
     }
     
 
-
+    @IBAction func deleteButtonAction(_ sender: UIButton) {
+        if let x = id.text , let y = Int(x) , let p = number.text , let r = Int(p)
+        {
+            sqlite.deletedata (id:y, name: name.text!, number: r)
+        }
+    }
+    
+    @IBAction func getDataButtonAction(_ sender: UIButton) {
+        let naviget = storyboard?.instantiateViewController(withIdentifier: "ViewController2") as! ViewController2
+        navigationController?.pushViewController(naviget, animated: true)
+    }
 }
 

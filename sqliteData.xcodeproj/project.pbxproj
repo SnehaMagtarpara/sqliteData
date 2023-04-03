@@ -14,6 +14,8 @@
 		D343713F29D6D9C100BA9F3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D343713E29D6D9C100BA9F3C /* Assets.xcassets */; };
 		D343714229D6D9C100BA9F3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D343714029D6D9C100BA9F3C /* LaunchScreen.storyboard */; };
 		D343714A29D6D9D900BA9F3C /* sqliteFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D343714929D6D9D900BA9F3C /* sqliteFile.swift */; };
+		D3F5B4D129DAD1BC00867004 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F5B4D029DAD1BC00867004 /* ViewController2.swift */; };
+		D3F5B4D329DAD22900867004 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F5B4D229DAD22900867004 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		D343714129D6D9C100BA9F3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D343714329D6D9C100BA9F3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D343714929D6D9D900BA9F3C /* sqliteFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sqliteFile.swift; sourceTree = "<group>"; };
+		D3F5B4D029DAD1BC00867004 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		D3F5B4D229DAD22900867004 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,8 @@
 				D343713729D6D9C000BA9F3C /* SceneDelegate.swift */,
 				D343713929D6D9C000BA9F3C /* ViewController.swift */,
 				D343713B29D6D9C000BA9F3C /* Main.storyboard */,
+				D3F5B4D229DAD22900867004 /* TableViewCell.swift */,
+				D3F5B4D029DAD1BC00867004 /* ViewController2.swift */,
 				D343714929D6D9D900BA9F3C /* sqliteFile.swift */,
 				D343713E29D6D9C100BA9F3C /* Assets.xcassets */,
 				D343714029D6D9C100BA9F3C /* LaunchScreen.storyboard */,
@@ -141,8 +147,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3F5B4D129DAD1BC00867004 /* ViewController2.swift in Sources */,
 				D343713A29D6D9C000BA9F3C /* ViewController.swift in Sources */,
 				D343714A29D6D9D900BA9F3C /* sqliteFile.swift in Sources */,
+				D3F5B4D329DAD22900867004 /* TableViewCell.swift in Sources */,
 				D343713629D6D9C000BA9F3C /* AppDelegate.swift in Sources */,
 				D343713829D6D9C000BA9F3C /* SceneDelegate.swift in Sources */,
 			);
