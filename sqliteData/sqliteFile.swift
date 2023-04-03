@@ -51,22 +51,19 @@ class sqlite
         let query = "select id,name,number from Student"
         var get : OpaquePointer?
         sqlite3_prepare(file, query, -1, &get, nil)
-       
-
-        while sqlite3_step(get) == SQLITE_ROW
+     while sqlite3_step(get) == SQLITE_ROW
         {
             let id = sqlite3_column_int64(get, 0)
-            print("id = \(id)",terminator: "")
+            print("id = \(id);",terminator: "")
             let mobileNumber = sqlite3_column_int64(get, 2)
-            print("number = \(mobileNumber)",terminator: "")
+            print("number = \(mobileNumber);",terminator: "")
             if let cString = sqlite3_column_text(get, 1)
             {
                 let name = String(cString: cString)
                 array.append(Model(id: Int(id), name: name, mobileNumber: Int(mobileNumber)))
             }
         }
-
-        print("Delete Data")
+        print("get Data")
         return array
   
     }
