@@ -15,9 +15,7 @@ import SQLite3
  }
 class sqlite
 {
-
     static var file : OpaquePointer?
-
     static func createFile()
     {
         var a = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
@@ -34,7 +32,6 @@ class sqlite
         sqlite3_prepare(file, query, -1, &table, nil)
         print("Create Table")
         sqlite3_step(table)
-        
     }
     static func addData(id:Int,name:String,number:Int)
     {
@@ -43,7 +40,6 @@ class sqlite
         sqlite3_prepare(file, query, -1, &data, nil)
         print("Add Data ")
         sqlite3_step(data)
-        
     }
     static func getData()->[Model]
     {
@@ -65,7 +61,6 @@ class sqlite
         }
         print("get Data")
         return array
-  
     }
     static func deletedata(id:Int,name:String,number:Int)
     {
